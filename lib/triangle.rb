@@ -9,19 +9,14 @@ class Triangle
   end 
   
   def kind 
-      if triangle_type1 == true && triangle_type2 == true 
-        puts true 
-      else 
-        raise TriangleError
-      end 
-      
-      if a == b && b == c && a == c 
-        :equilateral 
-      elseif a != b && b != c && a != c 
-        :scalene 
-      else 
-        :isosceles
-      end 
+     (a, b, c)
+  if ((a == b) && (a == c) && (b == c))
+    return :equilateral
+  elsif ((a == b) || (a == c) || (b == c))
+    return :isosceles
+  else
+    return :scalene
+  end
   end
   
   def triangle_type1 
