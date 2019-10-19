@@ -11,7 +11,7 @@ attr_accessor :a, :b, :c
 
 
  def kind
-     validate_triangle
+     triangle_type
      if a == b && b == c
        :equilateral
      elsif a == b || b == c || c == a
@@ -19,10 +19,9 @@ attr_accessor :a, :b, :c
      else
        :scalene
      end
-   end
+  end
 
-
-    def validate_triangle
+  def triangle_type
       valid_triangle = [
         (a + b > c),
         (a + c > b),
