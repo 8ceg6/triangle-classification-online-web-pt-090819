@@ -29,7 +29,7 @@ attr_accessor :a, :b, :c
       ]
       [a, b, c].each do |side|
         triangle << false if side <= 0
-        raise TriangleError if valid_triangle.include?(false)
+        raise TriangleError if triangle.include?(false)
       end
     end
 
