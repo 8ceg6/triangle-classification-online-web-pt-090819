@@ -27,7 +27,7 @@ attr_accessor :a, :b, :c
         (a + c > b),
         (b + c > a)
       ]
-   self.each do |side|
+   [a,b,c].each do |side|
         triangle << false if side <= 0
         raise TriangleError if triangle.include?(false)
       end
