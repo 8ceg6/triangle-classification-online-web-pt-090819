@@ -9,6 +9,10 @@ class Triangle
   end 
   
   def kind 
-      triangle_type 
+      if triangle_type1 == true && triangle_type == true 
+        puts true 
+      else 
+        raise T
+      end 
   end 
 end
