@@ -11,8 +11,7 @@ attr_accessor :a, :b, :c
  
  end
 
- 
- def kind
+  def kind
      triangle_type
      if a == b && b == c
        :equilateral
