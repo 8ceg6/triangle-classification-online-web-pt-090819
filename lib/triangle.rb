@@ -26,7 +26,7 @@ class Triangle
 #   def triangle_type2
 #       a + b > c && a + c > b && b + c > a 
 #   end
-# end
+end
 
 class TriangleError < StandardError
 end 
