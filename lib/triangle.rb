@@ -2,14 +2,18 @@ require_relative '../lib/triangle'
 class Triangle
 
 attr_accessor :a, :b, :c
+@@all = []
 
  def initialize(a, b, c)
   @a = a
   @b = b
   @c = c
+  @@all << self 
  end
 
-
+  def self.all
+      @@all
+  end 
  def kind
      triangle_type
      if a == b && b == c
@@ -27,7 +31,7 @@ attr_accessor :a, :b, :c
         (a + c > b),
         (b + c > a)
       ]
-   [a,b,c].each do |side|
+   self.each do |side|
         triangle << false if side <= 0
         raise TriangleError if triangle.include?(false)
       end
