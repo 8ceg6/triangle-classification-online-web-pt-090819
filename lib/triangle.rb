@@ -19,14 +19,14 @@ class Triangle
   end
   end
   
-  def triangle_type1 
-      a.positive? && b.positive? && c.positive?
-  end 
+#   def triangle_type1 
+#       a.positive? && b.positive? && c.positive?
+#   end 
   
-  def triangle_type2
-      a + b > c && a + c > b && b + c > a 
-  end
-end
+#   def triangle_type2
+#       a + b > c && a + c > b && b + c > a 
+#   end
+# end
 
 class TriangleError < StandardError
 end 
