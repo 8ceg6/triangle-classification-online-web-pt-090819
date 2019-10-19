@@ -9,7 +9,7 @@ class Triangle
   end 
   
   def kind 
-     (a, b, c)
+     
   if ((a == b) && (a == c) && (b == c))
     return :equilateral
   elsif ((a == b) || (a == c) || (b == c))
