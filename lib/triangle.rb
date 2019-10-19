@@ -1,12 +1,14 @@
 lib/triangle.rb
 class Triangle
- attr_accessor :length, :width, :height
+ attr_accessor :a, :b, :c 
  
-  def initialize(length,width,height)
-      @length = length
-      @width = width
-      @height = height
+  def initialize(a,b,c)
+      @a = a 
+      @b = b 
+      @d = c
   end 
   
-  
+  def kind 
+      triangle_type 
+  end 
 end
